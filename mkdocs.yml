@@ -2,3 +2,25 @@ site_name: SC (Unnamed) Datapack Specification
 site_url: https://sixslime.github.io/unnamed-sc-doc
 theme:
   name: material
+  font:
+    text: "Atkinson Hyperlegible"
+    code: "JetBrains Mono"
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: indigo
+      accent: cyan
+
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: cyan
+      accent: deep purple
+
+  features:
+    - navigation.instant
+
+
