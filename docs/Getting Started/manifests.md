@@ -1,1 +1,0 @@
-# Your Pack's Manifest
