@@ -26,8 +26,7 @@ theme:
     - navigation.indexes
 
 nav:
-  - Introduction: index.md
-  - Overview: overview.md
+  - What Is SC?: index.md
   - Guide:
     - Converting Your Datapack:
       - guide/converting/index.md
@@ -36,3 +35,4 @@ nav:
   - Quick Reference:
     - Foo: guide/quickref/foo.md
   - Why SC?: why.md
+  - About: meta.md
