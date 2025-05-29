@@ -24,14 +24,14 @@ theme:
     - navigation.instant
     - navigation.path
     - navigation.indexes
-
+    - navigation.footer
 nav:
   - What Is SC?: index.md
   - Guide:
     - Converting Your Datapack:
-      - guide/converting/index.md
+      - Converting Your Datapack: guide/converting/index.md
     - SlimeCore In-Depth:
-      - guide/slimecore/index.md
+      - SlimeCore In-Depth: guide/slimecore/index.md
   - Quick Reference:
     - Foo: guide/quickref/foo.md
   - Why SC?: why.md

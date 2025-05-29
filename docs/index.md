@@ -13,7 +13,7 @@ It is designed to achieve this objective while being (in order of priority):
 4. Intuitive as possible.
 
 ## Who Is It For?
-SC is ideal for experienced datapack developers who desire to use datapacks created by others and/or publish their own datapacks for others to use.
+SC is ideal for **experienced datapack developers** who desire to use datapacks created by others and/or publish their own datapacks for others to use.
 
 With that being said, SC can practically benefit **any player** that plays with more than one datapack in their world(s).
 
@@ -36,7 +36,7 @@ Some key features of SC packs are:
 
 * Explicitly defined `load` and `tick` ordering relative to other SC packs.
 * Naming rules for almost everything, ensuring that no two resources interfere.
-* Very clear public/private seperation (making unintended interactions very unlikely).
+* Very clear public/private separation (making unintended interactions very unlikely).
 
 #### A Clean Experience
 * Consistent public function documentation and input/output methods.
@@ -46,15 +46,14 @@ Some key features of SC packs are:
 * Rich and explicit definitions for custom NBT types.
 
 
-
 ## Does It Require Any Downloads?
 It would be dishonest to omit that SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
 
-Before you leave immediately, please consider the following:
+Before you dismiss SC entirely, please consider the following:
 
 * SlimeCore has **zero performance impact** beyond the single `/reload` tick.
 * SlimeCore has **zero gameplay impact**.
-* Many awesome features that SC provides would not be possible without some sort of required datapack dependency.
+* Many awesome features that SC provides depend on an orchestration system.
 
 ### Isn't That Third Party?
 Technically yes, a datapack is third party, but it is not a *program*. What is meant by "practically implementable with no third party programs", is that you should not need (or be practically required) to use a program or medium outside of what is officially supported by Minecraft. Further, this should also imply that existing third party programs can trivially integrate with SC.
