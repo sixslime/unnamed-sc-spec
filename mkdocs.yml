@@ -22,14 +22,17 @@ theme:
 
   features:
     - navigation.instant
+    - navigation.path
+    - navigation.indexes
 
 nav:
   - Introduction: index.md
+  - Overview: overview.md
   - Guide:
     - Converting Your Datapack:
-      - Overview: guide/converting/overview.md
+      - guide/converting/index.md
     - SlimeCore In-Depth:
-      - Overview: guide/slimecore/overview.md
+      - guide/slimecore/index.md
   - Quick Reference:
     - Foo: guide/quickref/foo.md
   - Why SC?: why.md
