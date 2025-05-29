@@ -9,8 +9,8 @@ It is actually recommended **against** attempting to implement SC. Trying to lea
 
 However, if you are only new to **datapacks**, but somewhat experienced with commands, consider trying SC, it does not introduce anything unorthodox or against "normal" datapack structure (and may implicitly teach you good practices).
 
-## Why Not Something Else?
-For the same reason SC was made initially: *because there is nothing else.*
+## Why SC Specifically?
+For the same reason SC was made initially: *because there isn't anything else.*
 
 At the time of writing, the generally accepted standard of datapacks are a collection of good practices/conventions that are largely unspoken and/or not formally documented. This leads to an environment where it is usually a headache (or worse) to integrate someone elses work/datapack with your own.
 
