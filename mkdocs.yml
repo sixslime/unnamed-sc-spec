@@ -11,7 +11,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
       primary: indigo
-      accent: cyan
+      accent: teal
 
     - scheme: default
       toggle:
