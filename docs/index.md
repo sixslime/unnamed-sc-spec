@@ -1,8 +1,6 @@
 # Introduction
 
-Welcome to the description and partial guide/documentation to an unnamed datapack specification, further referred too as **SC**. While SC itself is hypothetically complete, these docs only serve to express the idea of SC, not as definitive documentation *(see [Meta Information](meta.md))*.
-
-Datapacks that follow SC are referred to as **SC packs**.
+Welcome to the guide and partial documentation to an unnamed datapack specification, further referred too as **SC**. While SC itself is hypothetically complete, these pages only serve to communicate the idea of SC in full, not as definitive documentation. Datapacks that comply with SC will be referred to as **SC packs**.
 
 
 ## What is SC?
@@ -13,7 +11,7 @@ SC is designed to achieve exactly one objective:
 
 It is designed to achieve this objective while being (in order of priority):
 
-1. Practically followable with **no** third party programs.
+1. Practically implementable with **no** third party programs.
 2. Robust as possible.
 3. Unintrusive as possible.
 4. Intuitive as possible.
@@ -63,7 +61,7 @@ Before you leave immediately, please consider the following:
 * Many awesome features that SC provides would not be possible without some sort of required datapack dependency.
 
 ### Isn't That Third Party?
-Technically yes, a datapack is third party, but it is not a *program*. What is meant by "practically followable with no third party programs", is that you should not need (or be practically required) to use a program or medium outside of what is officially supported by Minecraft.
+Technically yes, a datapack is third party, but it is not a *program*. What is meant by "practically implementable with no third party programs", is that you should not need (or be practically required) to use a program or medium outside of what is officially supported by Minecraft.
 
 *An example of such a third party program/tool is [Beet](https://github.com/mcbeet/beet). As awesome as it is, Beet requires the usage of python (among other things), which is obviously external to Minecraft.*
 
