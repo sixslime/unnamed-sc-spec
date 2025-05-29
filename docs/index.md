@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the description and partial guide/documentation to an unnamed datapack specification, further referred too as **SC**. While SC itself is hypothetically complete, these docs only serve to express the idea of SC, not as definitive documentation *(see [Meta Information](meta))*.
+Welcome to the description and partial guide/documentation to an unnamed datapack specification, further referred too as **SC**. While SC itself is hypothetically complete, these docs only serve to express the idea of SC, not as definitive documentation *(see [Meta Information](meta.md))*.
 
 Datapacks that follow SC are referred to as **SC packs**.
 
@@ -31,7 +31,7 @@ Some key features of SC packs are:
 * Proper versioning.
 * Proper authoring and descriptive information.
 * Proper dependencies of other SC packs.
-* Ability to define abstract (to be implemented by other packs) interfaces.
+* Ability to define abstract interfaces (to be implemented by other packs).
 
 #### Indication Of Public And Private
 
@@ -40,19 +40,21 @@ Some key features of SC packs are:
 
 #### Near-Impossible Cross-Pack Interference
 
+* Explicitly defined `load` and `tick` ordering relative to other SC packs.
 * Naming rules for almost everything, ensuring that no two resources interfere.
-* Very clear public/private seperation, making accidental interference extremely unlikely.
+* Very clear public/private seperation (making unintended interactions very unlikely).
 
-#### Standardized Public Definitions
+#### A Clean Experience
 * Consistent public function documentation and input/output methods.
-* Consistent 
+* Consistent and defined configuration options.
+* Safe and automatic uninstallation.
 * Explicitly defined storage data schema and documentation.
-* Ability to define, reference, and document custom NBT types.
+* Rich and explicit definitions for custom NBT types.
 
-And much more.
+
 
 ## Does It Require Any Downloads?
-It would be wrong to omit that SC requires the download of **one datapack**, SlimeCore, for any world that contains SC packs. SlimeCore acts as an "orchestrator" for SC packs.
+It would be dishonest to omit that SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
 
 Before you leave immediately, please consider the following:
 
