@@ -32,7 +32,7 @@ nav:
       - Converting Your Datapack: guide/converting/index.md
     - SlimeCore In-Depth:
       - SlimeCore In-Depth: guide/slimecore/index.md
-  - Quick Reference:
-    - Foo: guide/quickref/foo.md
+  - Reference:
+    - Foo: guide/reference/foo.md
   - Why SC?: why.md
   - About: meta.md
