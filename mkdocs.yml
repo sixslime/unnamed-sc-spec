@@ -30,6 +30,7 @@ nav:
   - Guide:
     - Converting Your Datapack:
       - Converting Your Datapack: guide/converting/index.md
+      - 'Pack Namespace': guide/converting/namespace.md
       - 'SlimeCore Introduction': guide/converting/slimecore.md
       - Pack Manifest: guide/converting/manifest.md
     - SlimeCore In-Depth:

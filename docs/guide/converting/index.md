@@ -2,9 +2,7 @@
 
 Implementing SC on an existing datapack is straightforward and can be done programatically.
 
-Each page in this guide is split into two sections (denoted by a horizontal line). The first section provides the relevant **actionable steps** required in the datapack conversion process, while the second provides the relevant **general explanation** of the specification.
-
-Reading this guide fully and in-order should provide you with near-complete knowledge of SC.
+Each page in this guide is split into two sections (denoted by a horizontal line). The first section provides the relevant **actionable steps** required in the datapack conversion process, while the second provides the relevant **general explanation** of the specification. Reading this guide fully and in-order should provide you with near-complete knowledge of SC.
 
 The following is recommended but not required:
 
