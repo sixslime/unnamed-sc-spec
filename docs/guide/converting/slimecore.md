@@ -11,6 +11,8 @@ SlimeCore is just a datapack; the installation process is simply placing it into
 
 ## New Entrypoints
 
+Under SC, '#
+
 
 ---
 
