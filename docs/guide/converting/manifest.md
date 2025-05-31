@@ -3,9 +3,11 @@
 SC defines a **manifest function** as:
 > A function that is included in the function tag `#slimecore:manifest` that calls `slimecore:manifest`.
 
-Manifest functions are the only functions that are permitted to be included in `#slimecore:manifest`.
+SC packs must define **exactly one** manifest function. *Due to this requirement, all SC packs include the `slimecore` namespace.*
 
-## Creating The Manifest
+## Your Datapack's Manifest Function
+Create a new function in your datapack's primary namespace to be your datapack's manifest function *(A reasonable path for this is `<primary namespace>:_/manifest.mcfunction`)*.
+
 You can use the following as a template for your datapack's manifest function:
 ```mcfunction
 data modify storage slimecore:in manifest.pack set value "<PRIMARY NAMESPACE>"
@@ -28,6 +30,16 @@ data modify storage slimecore:in manifest.implements set value []
 function slimecore:manifest
 ```
 
-To comply with SC, your datapack's manifest function must properly set all inputs (see next section of this page).
+In order to comply with SC, your datapack's manifest function must have all inputs properly set *(see the second section of this page)*.
 
-For the purposes of this guide, the only input you need to set right now is `pack`, which **must** be set equal to the name of your datapack's primary namespace.
+For the purposes of this guide however, the only input you need to set right now is `pack`, which **must** be set to the name of your datapack's primary namespace.
+
+Append the manifest function to `#slimecore:manifest` by including it in your datapack's `slimecore/tags/function/manifest.json`.
+
+At this point, after reloading your world, your datapack should function as it did originally.
+
+---
+
+TODO
+
+`#slimecore:manifest` must only contain manifest functions.
