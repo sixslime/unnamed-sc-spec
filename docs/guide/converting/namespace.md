@@ -25,20 +25,18 @@ Note that defining *anything new* in the `minecraft` namespace, even if it may s
 
 *If your datapack depends on other datapacks, assume that the dependencies' resources are already defined when evaluating your datapack's namespaces (dependencies will be covered later in this guide).*
 
-**If your datapack meets all of these requirements, you may skip to the [next section](./slimecore.md).**
+If your datapack meets all of the above requirements, you may skip to the [next section](./slimecore.md).
 
 ## Dealing With Multiple Primary Namespaces
-Ultimately, the two strategies for handling multiple primary namespaces are:
+Ultimately, there are two strategies for dealing with multiple primary namespaces.
 
-#### Splitting
-Turning a primary namespace into it's own datapack, then declaring it as a dependency *(just as a mental/text note for now, official dependency declaration will be explained [later](TODO))* of the original datapack. Splitting is best for namespaces that are **not closely tied** to any one namespace and/or can **realistically be re-used in the future**.
+**Splitting:** Turning a primary namespace into it's own datapack and declaring it as a dependency of the original datapack *(an informal text note will suffice for now. dependency declaration will be explained [later](TODO))*.
 
-#### Merging
-Simply moving all of one namespace's resources into another namespace, effectively merging the two. Merging is best for "helper" or utility namespaces that are **closely tied/related** to others.
+**Merging:** Moving all of one namespace's resources into another namespace.
 
-*Splitting tends to be the easier option, however it is recommended to do what makes the most sense to you as a datapack developer.*
+Splitting tends to be the easier option, and is recommended for namespaces that can realistically be re-used in the future. Merging is best for "helper" or utility namespaces that reference or are closely related to the namespace(s) they are referenced by.
 
-### Example:
+### Example
 
 Given datapack with 3 primary namespaces:
 
