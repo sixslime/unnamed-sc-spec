@@ -1,16 +1,12 @@
 # Primary Namespace
 
-## Definition
-
-A namespace is a directory contained in a datapack's `data` directory.
-
 SC defines a **primary namespace** as:
 
-> A namespace that contains/defines otherwise undefined registry resources (functions, recipes, advancements, etc.).
+> A namespace that contains/defines otherwise undefined resources (functions, recipes, advancements, etc.).
 
 Importantly, this does not include overwriting or appending to already existing resources.
 
-*For example, appending to `minecraft/tags/block/infiniburn_overworld.json` or overwriting `minecraft/recipe/torch.json` would not make `minecraft` a primary namespace of your datapack; however, defining `minecraft/recipe/slime_ball.json` would, because `minecraft/recipe/slime_ball.json` does not already exist.*
+*For example, appending to `minecraft/tags/block/infiniburn_overworld.json` or overwriting `minecraft/recipe/torch.json` would not make `minecraft` a primary namespace of your datapack; however, defining `minecraft/recipe/slime_ball.json` would, because `minecraft/recipe/slime_ball.json` is not defined by default.*
 
 
 ## Requirements
@@ -24,7 +20,7 @@ Under SC, your datapack must have **exactly one** primary namespace, and it must
 
 Also, while not explicitly required, it is expected that it follows [good naming practices](TODO).
 
-Per these requirements, any resources that do not already exist by default in the `minecraft` namespace must not be contained in your datapack's `minecraft` namespace. If such resources do exist, you must move them to your datapack's primary namespace.
+Per these requirements, If your datapack defines any resources in the `minecraft` namespace that do not exist by default, you must move them to your datapack's primary namespace.
 
 If your datapack depends on other datapacks, assume that the dependencies' resources are already defined when evaluating these requirements *(dependencies will be covered [later](TODO))*.
 
@@ -39,9 +35,7 @@ Two main strategies can be employed if your datapack contains multiple primary n
 
 Splitting is recommended for namespaces with resources that can realistically be re-used in the future (and tends to be the easier option). Merging is best for "helper" or utility namespaces that reference or are closely related to the namespace(s) that they are referenced by.
 
-### Example
-
-Given datapack with 3 primary namespaces:
+As an example, imagine a datapack with 3 primary namespaces:
 
 * `math`: contains general math functions.
 * `util`: contains utility resources for `coolcats`; references resources from `math` and `coolcats`.
