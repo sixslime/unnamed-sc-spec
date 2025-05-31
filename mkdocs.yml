@@ -33,7 +33,7 @@ nav:
       - 'Primary Namespace': guide/converting/namespace.md
       - 'Entrypoints': guide/converting/entrypoints.md
       - 'SlimeCore': guide/converting/slimecore.md
-      - Pack Manifest: guide/converting/manifest.md
+      - Manifest Function: guide/converting/manifest.md
     - SlimeCore In-Depth:
       - SlimeCore In-Depth: guide/slimecore/index.md
   - Reference:

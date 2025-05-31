@@ -15,7 +15,7 @@ Under SC, your datapack must have **exactly one** primary namespace, and it must
 
 * Be 3+ characters in length.
 * Not contain any `.` (period).
-* Not start with `-` (dash) or `_` (underscore).
+* Not start or end with `-` (dash) or `_` (underscore).
 * Not be `minecraft` or `slimecore`.
 
 Also, while not explicitly required, it is expected that it follows [good naming practices](TODO).
