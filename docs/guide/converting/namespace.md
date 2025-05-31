@@ -2,39 +2,42 @@
 
 ## Definition
 
-> A **primary namespace** is a datapack namespace that contains otherwise undefined registry resources (functions, recipes, advancements, etc.).
- 
-Importantly, this does not include overwriting or appending to already existing resources (e.g. adding a block to `#minecraft:infiniburn_overworld` or modifying the `minecraft:torch` recipe would not make `minecraft` a primary namespace of your datapack).
+A namespace is a directory contained in a datapack's `data` directory.
 
-*A datapack namespace is any directory in a datapack's `data` directory.*
+SC defines a **primary namespace** as:
+
+> A namespace that contains/defines otherwise undefined registry resources (functions, recipes, advancements, etc.).
+
+Importantly, this does not include overwriting or appending to already existing resources.
+
+*For example, appending to `minecraft/tags/block/infiniburn_overworld.json` or overwriting `minecraft/recipe/torch.json` would not make `minecraft` a primary namespace of your datapack; however, defining `minecraft/recipe/slime_ball.json` would, because `minecraft/recipe/slime_ball.json` does not already exist.*
+
 
 ## Requirements
 
 Under SC, your datapack must have **exactly one** primary namespace, and it must:
 
-* Not be `minecraft` or `slimecore`.
-* Not contain any `.` (period) characters.
-* Not start with a `-` (dash) or `_` (underscore).
 * Be 3+ characters in length.
+* Not contain any `.` (period).
+* Not start with `-` (dash) or `_` (underscore).
+* Not be `minecraft` or `slimecore`.
 
-While not explicitly required, it is expected that it is follows [good naming practices](TODO).
+Also, while not explicitly required, it is expected that it follows [good naming practices](TODO).
 
-If your datapack is found to have multiple primary namespaces, see *[Dealing With Multiple Namespaces](TODO)*.
+Per these requirements, any resources that do not already exist by default in the `minecraft` namespace must not be contained in your datapack's `minecraft` namespace. If such resources do exist, you must move them to your datapack's primary namespace.
 
-Note that defining *anything new* in the `minecraft` namespace, even if it may seem reasonable (ex: defining `minecraft/recipe/slime_ball.json`) would make `minecraft` a primary namespace (which is invalid).
+If your datapack depends on other datapacks, assume that the dependencies' resources are already defined when evaluating these requirements *(dependencies will be covered [later](TODO))*.
 
-*If your datapack depends on other datapacks, assume that the dependencies' resources are already defined when evaluating your datapack's namespaces (dependencies will be covered later in this guide).*
-
-If your datapack meets all of the above requirements, you may skip to the [next section](./slimecore.md).
+If your datapack meets all of the above requirements, you may go to the [next page](./slimecore.md).
 
 ## Dealing With Multiple Primary Namespaces
-Ultimately, there are two strategies for dealing with multiple primary namespaces.
+Two main strategies can be employed if your datapack contains multiple primary namespaces.
 
-**Splitting:** Turning a primary namespace into it's own datapack and declaring it as a dependency of the original datapack *(an informal text note will suffice for now. dependency declaration will be explained [later](TODO))*.
+**Splitting:** Giving a namespace it's own datapack and declaring it as a dependency of the original datapack *(an informal text note will suffice for now. dependency declaration will be explained [later](TODO))*.
 
-**Merging:** Moving all of one namespace's resources into another namespace.
+**Merging:** Moving all (new/defined) resources from one namespace into another namespace.
 
-Splitting tends to be the easier option, and is recommended for namespaces that can realistically be re-used in the future. Merging is best for "helper" or utility namespaces that reference or are closely related to the namespace(s) they are referenced by.
+Splitting is recommended for namespaces with resources that can realistically be re-used in the future (and tends to be the easier option). Merging is best for "helper" or utility namespaces that reference or are closely related to the namespace(s) that they are referenced by.
 
 ### Example
 
