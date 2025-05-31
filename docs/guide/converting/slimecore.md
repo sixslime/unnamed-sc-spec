@@ -1,6 +1,6 @@
 # SlimeCore
 
-From [the introduction](../../index.md):
+*From [the introduction](../../index.md):*
 > SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
 
 SC packs do not load without SlimeCore. Now that you have changed your datapack's entrypoints, your world must have SlimeCore installed/enabled in order for your datapack to load.

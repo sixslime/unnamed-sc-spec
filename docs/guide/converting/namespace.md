@@ -11,7 +11,7 @@ Importantly, this does not include overwriting or appending to already existing 
 
 ## Requirements
 
-Under SC, your datapack must have **exactly one** primary namespace, and it must:
+Under SC, your datapack must have exactly one primary namespace, and it must:
 
 * Be 3+ characters in length.
 * Not contain any `.` (period).

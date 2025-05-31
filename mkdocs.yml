@@ -34,6 +34,7 @@ nav:
       - 'Entrypoints': guide/converting/entrypoints.md
       - 'SlimeCore': guide/converting/slimecore.md
       - Manifest Function: guide/converting/manifest.md
+      - Public/Private Resources: guide/converting/private_resources.md
     - SlimeCore In-Depth:
       - SlimeCore In-Depth: guide/slimecore/index.md
   - Reference:
