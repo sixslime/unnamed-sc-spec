@@ -1,18 +1,35 @@
 # Entrypoints
 
-## SlimeCore
+> SC does not permit the direct modification of the function tags `#minecraft:load` or `#minecraft:tick`.
 
-From [the main introduction](../../index.md):
-> SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
+Instead, these function tags can be defined in a datapack's primary namespace:
 
+1. `#<primary namespace>:pre_load`
+* `#<primary namespace>:load`
+* `#<primary namespace>:post_load`
+* `#<primary namespace>:tick_start`
 
-## Installation
-The latest version of SlimeCore can be found [here](https://github.com/sixslime/slimecore).
+These tags will be automatically executed upon world reload in the shown order.
 
-SlimeCore is just a datapack; the installation process is simply placing it into your world's `datapacks` directory and running `/reload` in-game.
+## Load
+
+If your datapack includes `#minecraft:load`, move it to `#<primary namespace>:load`.
+
+### Pre/Post Load
+Standard datapacks do not need to define `pre_load`/`post_load`, however if your datapack uses a loading method that includes it, such as [lantern load](TODO), (and your datapack does include `pre_load`/`post_load` functions), you can define the function tags `#<primary namespace>:post_load` and `#<primary namespace>:pre_load`.
+
+## Tick
+
+If your datapack includes `#minecraft:tick`, move it to `#<primary namespace>:tick_start`.
+
+Unlike `#minecraft:tick` however, `#<primary namespace>:tick_start` will **only execute once**.
+
+Your datapack's tick function(s) are expected to *schedule themselves* (include `schedule function <self> 1t`) in order to create a tick loop.
+
+## Manifest Required
+If you reload your world after making the changes explained above, you will notice that your entrypoint functions are not executed; this is expected behavior. SC (and more importantly SlimeCore) does not yet know of your datapack. This will be fixed on the [next page](./manifest.md), where you will create your datapack's manifest.
 
 ---
 
-## What Is SlimeCore?
-
-*If you just want to convert your datapack, you can 
+## Scheduling
+It is an expectation that **all** of your datapack's self-scheduling functions are both cleared and started via `tick_start`. blah
