@@ -1,4 +1,6 @@
-# SlimeCore
+# Entrypoints
+
+## SlimeCore
 
 From [the main introduction](../../index.md):
 > SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
@@ -12,3 +14,5 @@ SlimeCore is just a datapack; the installation process is simply placing it into
 ---
 
 ## What Is SlimeCore?
+
+*If you just want to convert your datapack, you can 

@@ -32,7 +32,8 @@ nav:
     - Converting Your Datapack:
       - Converting Your Datapack: guide/converting/index.md
       - 'Primary Namespace': guide/converting/namespace.md
-      - 'SlimeCore Introduction': guide/converting/slimecore.md
+      - 'SlimeCore': guide/converting/slimecore.md
+      - 'Entrypoints': guide/converting/entrypoints.md
       - Pack Manifest: guide/converting/manifest.md
     - SlimeCore In-Depth:
       - SlimeCore In-Depth: guide/slimecore/index.md
