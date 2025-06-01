@@ -21,7 +21,6 @@ theme:
       accent: deep purple
 
   features:
-    - navigation.instant
     - navigation.path
     - navigation.indexes
     - navigation.footer
