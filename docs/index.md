@@ -43,16 +43,16 @@ Some key features of SC packs are:
 #### A Clean Experience
 
 * Consistent public function documentation and input/output methods.
-* Consistent and defined configuration options.
+* Consistent and defined datapack configuration options.
 * Safe and automatic uninstallation.
 * Explicitly defined storage data schema and documentation.
-* Rich and explicit definitions for custom NBT types.
+* Rich and explicitly defined custom NBT types.
 
 ## Does It Require Any Downloads?
 
 It would be dishonest to omit that SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
 
-Before you dismiss SC entirely, please consider the following:
+Before you dismiss SC, consider the following:
 
 * SlimeCore has **zero performance impact** beyond the single `/reload` tick.
 * SlimeCore has **zero gameplay impact**.

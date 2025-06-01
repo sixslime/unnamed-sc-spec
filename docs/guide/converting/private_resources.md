@@ -14,7 +14,7 @@ And conversely, **private** as:
 
 **All resources** defined in your datapack's primary namespace must be classified as either public or private.
 
-### Player Interactable Behavior
+### Player Interactables
 
 Any resource that represents behavior that the player can directly interact with must be public; a few examples include:
 
@@ -37,7 +37,7 @@ With that being said, resources are generally expected to be public unless they 
 
 *If you are still unsure if a resource should be public or private, a good informal test is ask yourself "Would it make sense for this resource to exist under the `minecraft` namespace, given my datapack was built into Minecraft?" If the answer is yes, it should be public.*
 
-## Seperation
+## Separation
 
 Move all private resources to the directory `_` in their respective registry (i.e. `<registry>/<path>/<resource>` -> `<registry>/_/<path>/<resource>`) and ensure that all public resources are outside of this directory. Refactor references to these resources accordingly.
 
