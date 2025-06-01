@@ -27,6 +27,7 @@ Unlike `#minecraft:tick` however, `#<primary namespace>:tick_start` will **only 
 Your datapack's tick function(s) are expected to *schedule themselves* (include `schedule function <self> 1t`) in order to create a tick loop.
 
 ## Manifest Required
+
 If you reload your world after making the changes explained above, you will notice that your datapack's entrypoint functions are not executed; this is expected behavior. After you install SlimeCore and create your datapack's manifest, your datapack's entrypoint functions will execute as expected.
 
 ---

@@ -1,6 +1,7 @@
 # Manifest Function
 
 SC defines a **manifest function** as:
+
 > A function that is included in the function tag `#slimecore:manifest` that calls `slimecore:manifest`.
 
 Under SC, your datapack must define exactly one manifest function.
@@ -8,6 +9,7 @@ Under SC, your datapack must define exactly one manifest function.
 *Per this requirement, similar to how datapacks practically always include the `minecraft` namespace (to append to `#minecraft:tick`/`#minecraft:load`), SC packs must always include the `slimecore` namespace (to append to `#slimecore:manifest`).*
 
 ## Creation
+
 Create a new function in your datapack's primary namespace to be your datapack's manifest function *(A reasonable path for this is `<primary namespace>:_/manifest.mcfunction`)*.
 
 You can use the following as a template manifest function:

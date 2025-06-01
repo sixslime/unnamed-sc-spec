@@ -13,11 +13,13 @@ It is designed to achieve this objective while being (in order of priority):
 4. Intuitive as possible.
 
 ## Who Is It For?
+
 SC is ideal for **experienced datapack developers** who desire to use datapacks created by others and/or publish their own datapacks for others to use.
 
 With that being said, SC can practically benefit **any player** that plays with more than one datapack in their world(s).
 
 ## What Exactly Does It Do?
+
 Some key features of SC packs are:
 
 #### Pack(age) Manifests
@@ -39,14 +41,15 @@ Some key features of SC packs are:
 * Very clear public/private separation (making unintended interactions very unlikely).
 
 #### A Clean Experience
+
 * Consistent public function documentation and input/output methods.
 * Consistent and defined configuration options.
 * Safe and automatic uninstallation.
 * Explicitly defined storage data schema and documentation.
 * Rich and explicit definitions for custom NBT types.
 
-
 ## Does It Require Any Downloads?
+
 It would be dishonest to omit that SC requires the download of **SlimeCore**, a single datapack that acts as an orchestrator for any world that contains SC packs.
 
 Before you dismiss SC entirely, please consider the following:
@@ -56,6 +59,7 @@ Before you dismiss SC entirely, please consider the following:
 * Many awesome features that SC provides depend on an orchestration system.
 
 ### Isn't That Third Party?
+
 Technically yes, a datapack is third party, but it is not a *program*. What is meant by "practically implementable with no third party programs", is that you should not need (or be practically required) to use a program or medium outside of what is officially supported by Minecraft. Further, this should also imply that existing third party programs can trivially integrate with SC.
 
 *An example of such a third party program/tool is [Bolt](https://github.com/mcbeet/bolt). As awesome as it is, Bolt requires the usage of python (among other things), which is obviously external to Minecraft.*

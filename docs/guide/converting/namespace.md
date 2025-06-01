@@ -8,7 +8,6 @@ Importantly, this does not include overwriting or appending to already existing 
 
 *For example, appending to `minecraft/tags/block/infiniburn_overworld.json` or overwriting `minecraft/recipe/torch.json` would not make `minecraft` a primary namespace of your datapack; however, defining `minecraft/recipe/slime_ball.json` would, because `minecraft/recipe/slime_ball.json` is not defined by default.*
 
-
 ## Requirements
 
 Under SC, your datapack must have exactly one primary namespace, and it must:
@@ -27,6 +26,7 @@ If your datapack depends on other datapacks, assume that the dependencies' resou
 If your datapack meets all of the above requirements, you may go to the [next page](./slimecore.md).
 
 ## Dealing With Multiple Primary Namespaces
+
 Two main strategies can be employed if your datapack contains multiple primary namespaces.
 
 **Splitting:** Giving a namespace it's own datapack and declaring it as a dependency of the original datapack *(an informal text note will suffice for now. dependency declaration will be explained [later](TODO))*.
